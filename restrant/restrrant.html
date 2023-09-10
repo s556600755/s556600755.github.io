@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2e947a572c.js" crossorigin="anonymous"></script>
+    <style>
+        .header-carousel-item {
+            height: 450px;
+        }
+
+        .bg-cover {
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, .6);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-secondary py-2">
+        <div class="container text-end">
+            <a href="" class="text-white"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="" class="text-white"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">香港茶水攤</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            美味菜單
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <a class="btn btn-outline-primary mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">登入</a>
+                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reModal">註冊</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item header-carousel-item active bg-cover"
+                    style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYm9NS5xdH7HF4Cl2_sIwQtXtesQK-R0yS0A&usqp=CAU)">
+                    <div class="carousel-caption d-none d-md-block ">
+                        <h5>First slide label</h5>
+                        <p>美味好吃又不便宜</p>
+                    </div>
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                    style="background-image: url(https://www.welcometw.com/wp-content/uploads/2022/01/%E8%90%AC%E9%A6%99%E7%83%A4%E9%B4%A8@eatingcouplelife.jpg)">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+
+                </div>
+                <div class="carousel-item header-carousel-item bg-cover"
+                    style="background-image: url(https://a.cdn-hotels.com/gdcs/production54/d85/0020bfa8-2465-4e82-8348-4273ca0001b0.jpg?impolicy=fcrop&w=800&h=533&q=medium)">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+
+        </div>
+        <div class="section bg-dark text-white">
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-md-4 ">
+                        <div class="mb-2 "><i class="fa-solid fa-user fa-5x"></i></div>
+                        <h3>忘不了的蒸籠香味</h3>
+                        <p>阿力每天新鮮現蒸的小籠湯包</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-2"><i class="fa-solid fa-user fa-5x"></i></div>
+                        <h3>忘不了的蒸籠香味</h3>
+                        <p>阿力每天新鮮現蒸的小籠湯包</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-2"><i class="fa-solid fa-user fa-5x"></i></div>
+                        <h3>忘不了的蒸籠香味</h3>
+                        <p>阿力每天新鮮現蒸的小籠湯包</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+    <section class="container-fluid pt-5 bg-light text-dark" style="position: relative">
+        <div class="row">
+            <div class="col-md-5 bg-cover"
+                style="
+                    position: absolute; top:0 ; bottom: 0;
+                    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkCq2-WLIlf7BurFqaI2IzNhaay3EfogtSvg&usqp=CAU);">
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-7">
+                    <h3>哈囉你好嗎 衷心感謝妳的支持與鼓勵</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus obcaecati odit
+                        architecto placeat sequi aliquam error fugit voluptates vitae! Tempore asperiores dolore
+                        porro, beatae illo quod quam accusamus et nostrum?</p>
+                    <a href="#" class="btn btn-outline-info">查看更多</a>
+
+
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <h3>哈囉你好嗎 衷心感謝妳的支持與鼓勵</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus obcaecati odit
+                                architecto placeat sequi aliquam error fugit voluptates vitae! Tempore asperiores dolore
+                                porro, beatae illo quod quam accusamus et nostrum?</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>哈囉你好嗎 衷心感謝妳的支持與鼓勵</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus obcaecati odit
+                                architecto placeat sequi aliquam error fugit voluptates vitae! Tempore asperiores dolore
+                                porro, beatae illo quod quam accusamus et nostrum?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <section class="pt-5">
+        <div class="container">
+            <h2 class="text-center">美味的關鍵</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <i class="fa-solid fa-bowl-food"></i>
+                        </div>
+                        <h3>美味的食品</h3>
+
+
+
+
+                    </div>
+                    <p>經過現做</p>
+
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <i class="fa-solid fa-bowl-food"></i>
+
+                        </div>
+                        <h3>美味的食品</h3>
+
+
+
+
+
+
+                    </div>
+                    <div>
+                        <p>經過現做</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <dl class="row">
+                        <dt class="col-sm-3">Description lists</dt>
+                        <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+
+                        <dt class="col-sm-3">Term</dt>
+                        <dd class="col-sm-9">
+                            <p>Definition for the term.</p>
+                            <p>And some more placeholder definition text.</p>
+                        </dd>
+
+                        <dt class="col-sm-3">Another term</dt>
+                        <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
+
+                        <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                        <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+                        <dt class="col-sm-3">Nesting</dt>
+                        <dd class="col-sm-9">
+                            <dl class="row">
+                                <dt class="col-sm-4">Nested definition list</dt>
+                                <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list
+                                    inside your definition list.</dd>
+                            </dl>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-md-5">
+                    <div class="pic">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3640.40605792089!2d120.6652766!3d24.1574881!3m2!1i1024!2i768!4f13.1!2m1!1z56eR5Y2a6aSoIOWRqOmCiuWBnOi7iuWgtA!5e0!3m2!1szh-TW!2stw!4v1688127251131!5m2!1szh-TW!2stw"
+                        width="100%" height="100%" style="border: 1px;;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form class="needs-validation " novalidate>
+                        <div class="formgroup">
+                            <label for="username">姓名*
+
+                            </label>
+                            <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required>
+                            <label for="username">電話*
+
+                            </label>
+                            <input type="tel" class="form-control" id="phone" placeholder="請輸入電話" required>
+                            <label for="username">Email*
+
+                            </label>
+                            <input type="email" class="form-control" id="email" placeholder="請輸入電子信箱" required>
+                            <label for="username">人數*
+
+                            </label>
+                            <div class="invalid-feedback">
+                                請輸入人數
+                            </div>
+                            <input type="number" class="form-control" id="people" placeholder="請輸入人數" required>
+                            <div class="py-3">
+                                是否需要素食
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                    需要
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                                    value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                                    不需要
+                                </label>
+                            </div>
+                            <div class="text-end pt-2">
+                                <button type="button" class="btn btn-secondary">取消
+
+                                </button>
+                                <button type="submit" class="btn btn-success">送出
+
+                                </button>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function () {
+                            'use strict'
+
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.querySelectorAll('.needs-validation')
+
+                            // Loop over them and prevent submission
+                            Array.prototype.slice.call(forms)
+                                .forEach(function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (!form.checkValidity()) {
+                                            event.preventDefault()
+                                            event.stopPropagation()
+                                        }
+
+                                        form.classList.add('was-validated')
+                                    }, false)
+                                })
+                        })()
+                    </script>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 bg-cover  text-light" style="background-image: url(https://th.bing.com/th/id/R.baa7e21f107cadef82451f0c4913cc1c?rik=IPZDiUZDCCZjsA&pid=ImgRaw&r=0)">
+                <small>加入我們</small>
+                <h3>哈囉你好嗎 衷心感謝妳的支持與鼓勵</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus obcaecati odit architecto placeat sequi aliquam error fugit voluptates vitae! Tempore asperiores dolore porro, beatae illo quod quam accusamus et nostrum?
+                
+                哈囉你好嗎 衷心感謝妳的支持與鼓勵
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus obcaecati odit architecto placeat sequi aliquam error fugit voluptates vitae! Tempore asperiores dolore porro, beatae illo quod quam accusamus et nostrum?
+            </div>
+            <div class="col-md-6">
+                <small>加入我們</small>
+                哈囉你好嗎 衷心感謝妳的支持與鼓勵
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus obcaecati odit architecto placeat sequi aliquam error fugit voluptates vitae! Tempore asperiores dolore porro, beatae illo quod quam accusamus et nostrum?
+                
+                哈囉你好嗎 衷心感謝妳的支持與鼓勵
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus obcaecati odit architecto placeat sequi aliquam error fugit voluptates vitae! Tempore asperiores dolore porro, beatae illo quod quam accusamus et nostrum?</div>
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+                <a href="" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reModal">
+                    切換到註冊
+                    </a>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="reModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+              <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+
+
+        </script>
+</body>
+
+</html>
